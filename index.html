@@ -1,0 +1,2083 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Killpips Mind & Markets - Advanced Trading Tools for Professional Market Analysis">
+    <title>Killpips Mind & Markets | Professional Trading Suite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon"><i class="fa-solid fa-chart-column"></i></span>
+                <span class="logo-text">Killpips Mind & Markets</span>
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#kvo-profile" class="nav-link">KVO Profile</a></li>
+                <li><a href="#deep-chart" class="nav-link">Deep Chart</a></li>
+                <li><a href="#strategy-pressure" class="nav-link">Strategy Pressure</a></li>
+                <li><a href="#bc3" class="nav-link">BC3</a></li>
+                <li><a href="#deep-1min" class="nav-link">Deep Chart 1Min</a></li>
+                <li><a href="#integrated" class="nav-link">Integrated Model</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid"></div>
+            <!-- Decorative Elements -->
+            <div class="decoration-container">
+                <div class="decoration-element candlestick size-lg bull pos-1"></div>
+                <div class="decoration-element candlestick size-md bear pos-2"></div>
+                <div class="decoration-element decoration-arrow pos-3"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                <div class="decoration-element candlestick size-sm bull pos-4"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge animate-fade-in">
+                <span class="badge-icon"><i class="fa-solid fa-brain"></i></span>
+                <span>Professional Trading Suite</span>
+            </div>
+            <h1 class="hero-title animate-slide-up">
+                <span class="gradient-text">Killpips</span>
+                <span class="title-divider">Mind & Markets</span>
+            </h1>
+            <p class="hero-subtitle animate-slide-up delay-1">
+                Advanced market structure tools for reading context, momentum, and institutional behavior.
+            </p>
+            <div class="hero-cta animate-slide-up delay-2">
+                <a href="#kvo-profile" class="btn btn-primary">Explore Tools</a>
+                <a href="#integrated" class="btn btn-secondary">View Integrated Model</a>
+            </div>
+            <div class="hero-stats animate-fade-in delay-3">
+                <div class="stat-item">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">Trading Tools</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Operational Schemes</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Supported Assets</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Section 1: KVO Profile HeatMap -->
+    <section id="kvo-profile" class="section">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-icon"><i class="fa-solid fa-book-open"></i></span>
+                <h2 class="section-title">KVO PROFILE <span class="gradient-text">HeatMap</span></h2>
+                <p class="section-subtitle">Contextual market structure tool for mapping where price interaction is
+                    statistically and behaviorally relevant.</p>
+            </div>
+
+            <!-- Purpose -->
+            <div class="card reveal" style="margin-bottom: 2rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-bullseye"></i></span>
+                    <h3 class="card-title">Purpose of the Tool</h3>
+                </div>
+                <div class="card-content">
+                    <p>KVO PROFILE HeatMap is a <strong>contextual market structure tool</strong>.</p>
+                    <p>It does NOT generate trade signals. It maps <strong>where price interaction is statistically and
+                            behaviorally relevant</strong>.</p>
+                    <p>The indicator is designed to:</p>
+                    <ul>
+                        <li>Define <strong>price zones that matter</strong></li>
+                        <li>Show <strong>where market activity concentrates</strong></li>
+                        <li>Distinguish between <strong>acceptance, rejection, and transition areas</strong></li>
+                        <li>Help traders align decisions with <strong>location and market state</strong></li>
+                    </ul>
+                    <p>Think of it as a <strong>liquidity + reference framework</strong>, not a strategy.</p>
+                </div>
+            </div>
+
+            <!-- Components Grid -->
+            <h3 class="gradient-text reveal" style="text-align: center; margin-bottom: 2rem;">Core Components</h3>
+            <div class="grid-3 reveal">
+                <!-- Component 1 -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon"><i class="fa-solid fa-layer-group"></i></span>
+                        <h4 class="card-title">COMPONENT 1 — STATIC DAILY LEVELS</h4>
+                    </div>
+                    <div class="card-content">
+                        <h5 style="color: var(--accent-cyan); margin-bottom: 0.5rem;"><i
+                                class="fa-solid fa-thumbtack"></i> Function</h5>
+                        <p>Static levels represent <strong>predefined price references</strong> that remain fixed during
+                            the session.</p>
+                        <p>They act as:</p>
+                        <ul>
+                            <li>Structural anchors</li>
+                            <li>Decision boundaries</li>
+                            <li>Behavioral checkpoints</li>
+                        </ul>
+                        <p>Price reacts differently depending on <strong>how it approaches and behaves around
+                                them</strong>.</p>
+
+                        <h5 style="color: var(--accent-cyan); margin-top: 1rem; margin-bottom: 0.5rem;"><i
+                                class="fa-solid fa-brain"></i> How to Read
+                            Them</h5>
+                        <ul>
+                            <li>Levels are targets and potential entry area</li>
+                            <li>They are <strong>reaction zones</strong></li>
+                            <li>What matters is <strong>behavior around the level</strong>, not the touch itself</li>
+                        </ul>
+
+                        <h5 style="color: var(--accent-cyan); margin-top: 1rem; margin-bottom: 0.5rem;"><i
+                                class="fa-solid fa-crystal-ball"></i> Typical
+                            Market Responses</h5>
+                        <ul>
+                            <li>Acceptance → continuation through the level</li>
+                            <li>Rejection → rotation or pullback</li>
+                            <li>Compression → buildup for expansion</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Component 2 -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon"><i class="fa-solid fa-layer-group"></i></span>
+                        <h4 class="card-title">COMPONENT 2 — STATIC PROFILE (TOUCH INTENSITY)</h4>
+                    </div>
+                    <div class="card-content">
+                        <h5 style="color: var(--accent-cyan); margin-bottom: 0.5rem;"><i
+                                class="fa-solid fa-thumbtack"></i> Function</h5>
+                        <p>The static profile visually represents <strong>how much interaction</strong> each level has
+                            experienced over time.</p>
+                        <p>Thicker / longer segments indicate:</p>
+                        <ul>
+                            <li>Repeated interaction</li>
+                            <li>Higher structural importance</li>
+                            <li>Memory zones</li>
+                        </ul>
+
+                        <h5 style="color: var(--accent-cyan); margin-top: 1rem; margin-bottom: 0.5rem;">🧠 Meaning</h5>
+                        <ul>
+                            <li>High interaction = <strong>recognized area</strong></li>
+                            <li>Low interaction = <strong>weak reference</strong></li>
+                        </ul>
+                        <p>Markets tend to:</p>
+                        <ul>
+                            <li>Slow down near strong zones</li>
+                            <li>Accelerate through weak ones</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Component 3 -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon"><i class="fa-solid fa-fire"></i></span>
+                        <h4 class="card-title">COMPONENT 3 — LIQUIDITY HEATMAP</h4>
+                    </div>
+                    <div class="card-content">
+                        <h5 style="color: var(--accent-cyan); margin-bottom: 0.5rem;"><i
+                                class="fa-solid fa-thumbtack"></i> Function</h5>
+                        <p>The HeatMap highlights <strong>price areas where participation concentrates</strong>.</p>
+                        <p>It answers one core question:</p>
+                        <div class="blockquote"><em>Where is the market actually doing business?</em></div>
+
+                        <h5 style="color: var(--accent-cyan); margin-top: 1rem; margin-bottom: 0.5rem;">🧠
+                            Interpretation</h5>
+                        <ul>
+                            <li>Hot zones → acceptance and engagement</li>
+                            <li>Cold zones → rejection or fast traversal</li>
+                        </ul>
+                        <p>These zones are <strong>dynamic</strong> and adapt to recent activity.</p>
+
+                        <h5 style="color: var(--accent-cyan); margin-top: 1rem; margin-bottom: 0.5rem;">🔮 Expectations
+                        </h5>
+                        <ul>
+                            <li>Price often pauses or rotates in hot zones</li>
+                            <li>Breaks away from hot zones tend to be impulsive</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Operational Schemes -->
+            <h3 class="gradient-text reveal" style="text-align: center; margin: 3rem 0 2rem;"><i
+                    class="fa-solid fa-puzzle-piece"></i> Operational Schemes
+            </h3>
+            <p class="reveal"
+                style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem; margin-inline: auto;">
+                These
+                schemes describe <strong>how components interact</strong>, not trades.</p>
+
+            <div class="grid-2 reveal">
+                <!-- Scheme 1 -->
+                <div class="scheme-card">
+                    <div class="scheme-header green">
+                        <span class="scheme-icon"><i class="fa-solid fa-circle"></i></span>
+                        <h4 class="scheme-title">SCHEME 1 — LEVEL ACCEPTANCE</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <div class="scheme-section">
+                            <h5>Reading</h5>
+                            <ul>
+                                <li>Price enters a level</li>
+                                <li>Holds above / below it</li>
+                                <li>HeatMap shows activity building at the same area</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>Market State</h5>
+                            <ul>
+                                <li>Acceptance</li>
+                                <li>Participation alignment</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>What to Expect</h5>
+                            <ul>
+                                <li>Continuation</li>
+                                <li>Reduced volatility after acceptance</li>
+                                <li>Directional follow-through</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scheme 2 -->
+                <div class="scheme-card">
+                    <div class="scheme-header red">
+                        <span class="scheme-icon"><i class="fa-solid fa-circle"></i></span>
+                        <h4 class="scheme-title">SCHEME 2 — LEVEL REJECTION</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <div class="scheme-section">
+                            <h5>Reading</h5>
+                            <ul>
+                                <li>Price touches a level</li>
+                                <li>Fails to hold</li>
+                                <li>HeatMap activity remains thin or shifts away</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>Market State</h5>
+                            <ul>
+                                <li>Rejection</li>
+                                <li>Lack of commitment</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>What to Expect</h5>
+                            <ul>
+                                <li>Rotation</li>
+                                <li>Mean reversion</li>
+                                <li>Return toward previous accepted area</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scheme 3 -->
+                <div class="scheme-card">
+                    <div class="scheme-header orange">
+                        <span class="scheme-icon"><i class="fa-solid fa-circle"></i></span>
+                        <h4 class="scheme-title">SCHEME 3 — COMPRESSION BETWEEN LEVELS</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <div class="scheme-section">
+                            <h5>Reading</h5>
+                            <ul>
+                                <li>Price trapped between two static levels</li>
+                                <li>HeatMap intensifies in a narrow band</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>Market State</h5>
+                            <ul>
+                                <li>Balance</li>
+                                <li>Energy buildup</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>What to Expect</h5>
+                            <ul>
+                                <li>Expansion phase</li>
+                                <li>Direction decided at the break</li>
+                                <li>Fast move once structure releases</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scheme 4 -->
+                <div class="scheme-card">
+                    <div class="scheme-header blue">
+                        <span class="scheme-icon"><i class="fa-solid fa-circle"></i></span>
+                        <h4 class="scheme-title">SCHEME 4 — LIQUIDITY SHIFT</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <div class="scheme-section">
+                            <h5>Reading</h5>
+                            <ul>
+                                <li>HeatMap focus migrates upward or downward</li>
+                                <li>Previous hot zone cools off</li>
+                                <li>New engagement area forms</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>Market State</h5>
+                            <ul>
+                                <li>Transition</li>
+                                <li>Repricing process</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>What to Expect</h5>
+                            <ul>
+                                <li>Trend development</li>
+                                <li>Old levels lose influence</li>
+                                <li>New structure emerges</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Usage Rules -->
+            <div class="card reveal" style="margin-top: 3rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-brain"></i></span>
+                    <h3 class="card-title">CONTEXTUAL USAGE RULES</h3>
+                </div>
+                <div class="card-content">
+                    <ul>
+                        <li>Levels are <strong>context</strong>, not triggers</li>
+                        <li>Strong reactions occur when <strong>multiple components align</strong></li>
+                        <li>Best information comes from <strong>transitions</strong>, not static phases</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Core Principle -->
+            <div class="blockquote reveal"
+                style="margin-top: 2rem; text-align: center; font-size: 1.1rem; display: flex; flex-direction: column; align-items: center;">
+                <h4 style="color: var(--accent-primary); margin-bottom: 1rem;"><i class="fa-solid fa-compass"></i> CORE
+                    PRINCIPLE</h4>
+                <p>Price does not move because of levels.</p>
+                <p>Price moves because of <strong>participation around levels</strong>.</p>
+                <p style="margin-top: 1rem;">KVO PROFILE HeatMap shows <strong>where participation concentrates</strong>
+                    — so you can stop guessing and start <strong>reading location</strong>.</p>
+            </div>
+
+            <!-- Final Note -->
+            <div class="note-box info reveal" style="margin-top: 2rem;">
+                <span class="note-icon"><i class="fa-solid fa-note-sticky"></i></span>
+                <div>
+                    <strong>FINAL NOTE</strong>
+                    <p style="margin-top: 0.5rem;">Use KVO PROFILE HeatMap together with:</p>
+                    <ul style="margin-top: 0.5rem;">
+                        <li>Market bias</li>
+                        <li>Session context</li>
+                        <li>Momentum tools</li>
+                    </ul>
+                    <p style="margin-top: 0.5rem;">It defines <em>where</em> decisions make sense — not <em>when</em> to
+                        take them.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Killpips Deep Chart -->
+    <section id="deep-chart" class="section section-alt">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-icon"><i class="fa-solid fa-book-open"></i></span>
+                <h2 class="section-title">Killpips <span class="gradient-text">Deep Chart</span></h2>
+                <p class="section-subtitle">Operational Schemes & What to Expect</p>
+            </div>
+
+            <!-- Important Notice -->
+            <div class="note-box warning reveal" style="margin-bottom: 2rem;">
+                <span class="note-icon"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                <div>
+                    <p>Circles DO NOT represent entry signals.</p>
+                    <p>They indicate <strong>order flow states</strong> and <strong>institutional behavior</strong>.</p>
+                    <p>Always interpret them <strong>in context</strong>.</p>
+                </div>
+            </div>
+
+            <!-- Schemes Grid -->
+            <div class="grid-2 reveal">
+                <!-- SCHEME 1 -->
+                <div class="scheme-card">
+                    <div class="scheme-header green">
+                        <span class="scheme-icon"><i class="fa-solid fa-circle-half-stroke"></i></span>
+                        <h4 class="scheme-title">SCHEME 1 — CONTINUATION / IMPULSE</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <div class="scheme-section">
+                            <h5>📌 Identification</h5>
+                            <ul>
+                                <li><strong>Green circles</strong> → positive directional Momentum</li>
+                                <li><strong>Red circles</strong> → negative directional Momentum</li>
+                                <li>Appear in <strong>progressive sequence</strong></li>
+                                <li>Price <strong>efficiently accepts Momentum</strong> (coherent range, directional
+                                    bodies)</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>🧠 Meaning</h5>
+                            <p>The market:</p>
+                            <ul>
+                                <li>is experiencing <strong>sustained directional Momentum</strong></li>
+                                <li>converts Momentum into <strong>effective price displacement</strong></li>
+                                <li>shows <strong>high movement efficiency</strong></li>
+                            </ul>
+                            <p style="margin-top: 0.5rem;">Typical of:</p>
+                            <ul>
+                                <li>accepted breakouts</li>
+                                <li>early and mid-trend phases</li>
+                                <li>trend continuation after controlled pullbacks</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>🔮 What to Expect</h5>
+                            <ul>
+                                <li>Continuation of directional movement</li>
+                                <li><strong>Shallow and defended</strong> retracements</li>
+                                <li>Structural holding of highs/lows</li>
+                                <li>Fast reactions around contextual levels (KVO / session references)</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>⚠️ Warnings</h5>
+                            <ul>
+                                <li>If Momentum remains elevated but price <strong>loses efficiency</strong>, hidden
+                                    absorption may be developing</li>
+                                <li>Avoid counter-directional positioning while Momentum remains efficiently accepted
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCHEME 2 -->
+                <div class="scheme-card">
+                    <div class="scheme-header orange">
+                        <span class="scheme-icon"><i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"
+                                style="color:var(--accent-pink)"></i></span>
+                        <h4 class="scheme-title">SCHEME 2 — ABSORPTION / DISTRIBUTION</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <div class="scheme-section">
+                            <h5>📌 Identification</h5>
+                            <ul>
+                                <li><strong>Orange circles</strong> above contextual references → defensive absorption
+                                </li>
+                                <li><strong>Pink circles</strong> below contextual references → distributive absorption
+                                </li>
+                                <li>Elevated Momentum</li>
+                                <li>Price <strong>fails to translate Momentum</strong> into displacement (compressed
+                                    range)</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>🧠 Meaning</h5>
+                            <p>Market participants are:</p>
+                            <ul>
+                                <li>absorbing directional Momentum</li>
+                                <li>preventing further price progression</li>
+                                <li>accumulating or distributing positions without visible expansion</li>
+                            </ul>
+                            <p style="margin-top: 0.5rem;">This represents a <strong>control zone</strong>, not a single
+                                event.</p>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>🔮 What to Expect</h5>
+                            <ul>
+                                <li>False break attempts</li>
+                                <li>Stop-driven liquidity events</li>
+                                <li>Volatility compression followed by expansion</li>
+                                <li>Directional resolution <strong>only after absorption is released</strong></li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>⚠️ Warnings</h5>
+                            <ul>
+                                <li>Avoid initiating positions inside absorption zones</li>
+                                <li>Wait for:
+                                    <ul style="margin-top: 0.25rem;">
+                                        <li>breakout with renewed Momentum efficiency</li>
+                                        <li>or clear rejection and failure</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCHEME 3 -->
+                <div class="scheme-card">
+                    <div class="scheme-header yellow">
+                        <span class="scheme-icon"><i class="fa-solid fa-circle"></i></span>
+                        <h4 class="scheme-title">SCHEME 3 — EXHAUSTION (END OF MOVE)</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <div class="scheme-section">
+                            <h5>📌 Identification</h5>
+                            <ul>
+                                <li><strong>Yellow circles</strong></li>
+                                <li>Extremely elevated Momentum</li>
+                                <li>Price becomes inefficient or static</li>
+                                <li>Frequently observed at structural highs or lows</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>🧠 Meaning</h5>
+                            <p>Directional Momentum:</p>
+                            <ul>
+                                <li>reaches saturation</li>
+                                <li>loses its ability to generate further displacement</li>
+                                <li>signals <strong>declining movement efficiency</strong></li>
+                            </ul>
+                            <p style="margin-top: 0.5rem;">Typical after:</p>
+                            <ul>
+                                <li>prolonged trends</li>
+                                <li>impulsive extensions</li>
+                                <li>sustained continuation phases</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>🔮 What to Expect</h5>
+                            <ul>
+                                <li>Termination of the directional phase</li>
+                                <li>Deep corrective rotations or reversals</li>
+                                <li>Transition into balance or consolidation</li>
+                                <li>Initial contraction of volatility</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>⚠️ Warnings</h5>
+                            <ul>
+                                <li>Exhaustion does not imply immediate reversal</li>
+                                <li>Confirmation through opposite-side acceptance is required</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCHEME 4 -->
+                <div class="scheme-card">
+                    <div class="scheme-header blue">
+                        <span class="scheme-icon"><i class="fa-solid fa-circle"></i></span>
+                        <h4 class="scheme-title">SCHEME 4 — SILENT ACCUMULATION</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <div class="scheme-section">
+                            <h5>📌 Identification</h5>
+                            <ul>
+                                <li><strong>Blue circles</strong></li>
+                                <li>Moderate but persistent Momentum</li>
+                                <li>Minimal price displacement</li>
+                                <li>Absence of emotional participation</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>🧠 Meaning</h5>
+                            <p>The market is:</p>
+                            <ul>
+                                <li>building directional potential</li>
+                                <li>accumulating positions <strong>without visible expansion</strong></li>
+                                <li>maintaining controlled and low-visibility conditions</li>
+                            </ul>
+                            <p style="margin-top: 0.5rem;">Typical of:</p>
+                            <ul>
+                                <li>pre-session phases</li>
+                                <li>pre-event environments</li>
+                                <li>institutional positioning</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>🔮 What to Expect</h5>
+                            <ul>
+                                <li>Sudden increase in volatility</li>
+                                <li>Decisive directional expansion</li>
+                                <li>High probability of Momentum acceleration</li>
+                                <li>Moves often misaligned with retail expectations</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>⚠️ Warnings</h5>
+                            <ul>
+                                <li>Silent accumulation is not an entry signal</li>
+                                <li>It should be used to define <strong>directional bias</strong>, not timing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SCHEME 5 - Advanced Combined Reading -->
+            <div class="card reveal" style="margin-top: 3rem;">
+                <div class="card-header">
+                    <span class="card-icon">🧩</span>
+                    <h3 class="card-title">SCHEME 5 — COMBINED READING (ADVANCED)</h3>
+                </div>
+                <div class="card-content">
+                    <h5 style="color: var(--accent-cyan); margin-bottom: 1rem;">🎯 Purpose of This Scheme</h5>
+                    <p>This scheme is designed to:</p>
+                    <ul>
+                        <li>contextualize circles</li>
+                        <li>identify the <strong>current market phase</strong></li>
+                        <li>anticipate <strong>what the market is likely to do next</strong>, not what to trade</li>
+                    </ul>
+                    <p style="margin-top: 0.5rem;">It is not a strategy, but a <strong>market state map</strong>.</p>
+                </div>
+            </div>
+
+            <!-- Order Flow Transitions -->
+            <h3 class="gradient-text reveal" style="text-align: center; margin: 3rem 0 2rem;"><i
+                    class="fa-solid fa-link"></i> Order Flow Transitions
+            </h3>
+            <div class="grid-2 reveal">
+                <div class="card">
+                    <h4 style="color: var(--accent-green); margin-bottom: 1rem;"><i class="fa-solid fa-play"></i> Silent
+                        → Continuation</h4>
+                    <p><strong>Preparation → Expansion</strong></p>
+                    <h5 style="margin-top: 1rem; margin-bottom: 0.5rem;">Reading</h5>
+                    <ul>
+                        <li>Silent accumulation with controlled participation</li>
+                        <li>Absence of emotional volume spikes</li>
+                        <li>Momentum builds without price displacement</li>
+                    </ul>
+                    <h5 style="margin-top: 1rem; margin-bottom: 0.5rem;">Expectation</h5>
+                    <ul>
+                        <li>Sudden volatility expansion</li>
+                        <li>Clean directional movement</li>
+                        <li>Immediate price acceptance after the break</li>
+                    </ul>
+                    <div class="blockquote" style="margin-top: 1rem;">The most efficient trends originate from
+                        low-visibility momentum build-ups.</div>
+                </div>
+
+                <div class="card">
+                    <h4 style="color: var(--accent-orange); margin-bottom: 1rem;"><i class="fa-solid fa-play"></i>
+                        Continuation → Absorption</h4>
+                    <p><strong>Trend → Defense</strong></p>
+                    <h5 style="margin-top: 1rem; margin-bottom: 0.5rem;">Reading</h5>
+                    <ul>
+                        <li>Directional momentum still present</li>
+                        <li>Price progressively loses acceptance</li>
+                        <li>Increasing opposition against further extension</li>
+                    </ul>
+                    <h5 style="margin-top: 1rem; margin-bottom: 0.5rem;">Expectation</h5>
+                    <ul>
+                        <li>Deceleration of price</li>
+                        <li>Compression into a narrow range</li>
+                        <li>Increased probability of false breakouts</li>
+                    </ul>
+                    <div class="blockquote" style="margin-top: 1rem;">When momentum is no longer translated into price
+                        progress, control is being contested.</div>
+                </div>
+
+                <div class="card">
+                    <h4 style="color: var(--accent-yellow); margin-bottom: 1rem;"><i class="fa-solid fa-play"></i>
+                        Continuation → Exhaustion</h4>
+                    <p><strong>Expansion → Saturation</strong></p>
+                    <h5 style="margin-top: 1rem; margin-bottom: 0.5rem;">Reading</h5>
+                    <ul>
+                        <li>Momentum reaches extreme values</li>
+                        <li>Price becomes static or inefficient</li>
+                        <li>Late and emotionally-driven participation</li>
+                    </ul>
+                    <h5 style="margin-top: 1rem; margin-bottom: 0.5rem;">Expectation</h5>
+                    <ul>
+                        <li>Termination of directional urgency</li>
+                        <li>Deep corrective phase or reversal</li>
+                        <li>Structural reset of market conditions</li>
+                    </ul>
+                    <div class="blockquote" style="margin-top: 1rem;">Exhaustion does not imply immediate reversal, but
+                        the end of directional efficiency.</div>
+                </div>
+
+                <div class="card">
+                    <h4 style="color: var(--accent-blue); margin-bottom: 1rem;"><i class="fa-solid fa-play"></i>
+                        Absorption → Accepted Break</h4>
+                    <p><strong>Compression → Release</strong></p>
+                    <h5 style="margin-top: 1rem; margin-bottom: 0.5rem;">Reading</h5>
+                    <ul>
+                        <li>Prolonged absorption phase</li>
+                        <li>Price locked within a defined area</li>
+                        <li>Momentum progressively loses effectiveness</li>
+                    </ul>
+                    <h5 style="margin-top: 1rem; margin-bottom: 0.5rem;">Expectation</h5>
+                    <ul>
+                        <li>Violent directional expansion</li>
+                        <li>Breakout followed by sustained follow-through</li>
+                        <li>High probability of unidirectional continuation</li>
+                    </ul>
+                    <div class="blockquote" style="margin-top: 1rem;">The duration of absorption directly influences the
+                        magnitude of the subsequent release.</div>
+                </div>
+            </div>
+
+            <!-- Market States Table -->
+            <h3 class="gradient-text reveal" style="text-align: center; margin: 3rem 0 2rem;">🧠 Market States</h3>
+            <div class="table-wrapper reveal">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>State</th>
+                            <th>Dominant Circles</th>
+                            <th>Behavior</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Accumulation</td>
+                            <td>Silent</td>
+                            <td>Preparation</td>
+                        </tr>
+                        <tr>
+                            <td>Expansion</td>
+                            <td>Continuation</td>
+                            <td>Trend</td>
+                        </tr>
+                        <tr>
+                            <td>Distribution</td>
+                            <td>Absorption</td>
+                            <td>Control</td>
+                        </tr>
+                        <tr>
+                            <td>Saturation</td>
+                            <td>Exhaustion</td>
+                            <td>End of push</td>
+                        </tr>
+                        <tr>
+                            <td>Reset</td>
+                            <td>None</td>
+                            <td>Transition</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="blockquote reveal" style="text-align: center; margin-top: 1rem;">
+                The best opportunities usually appear <strong>between states</strong>, not inside a state.
+            </div>
+
+            <!-- Role of Context -->
+            <div class="card reveal" style="margin-top: 2rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-location-dot"></i></span>
+                    <h3 class="card-title">Role of Context</h3>
+                </div>
+                <div class="card-content">
+                    <p>Scheme 5 must always be anchored to context:</p>
+                    <ul>
+                        <li>KVO Daily</li>
+                        <li>KVO Weekly</li>
+                        <li>KVO Monthly</li>
+                        <li>BC3 Area/Session</li>
+                    </ul>
+                    <p style="margin-top: 1rem;">Same sequence, different context → <strong>different outcome</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Common Mistakes -->
+            <div class="note-box warning reveal" style="margin-top: 2rem;">
+                <span class="note-icon"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                <div>
+                    <strong>Common Mistakes</strong>
+                    <ul style="margin-top: 0.5rem;">
+                        <li>Reading a sequence without knowing where it starts</li>
+                        <li>Applying Scheme 5 in chop conditions</li>
+                        <li>Confusing exhaustion with automatic reversal</li>
+                        <li>Looking for signals instead of transitions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Core Principle -->
+            <div class="blockquote reveal"
+                style="margin-top: 2rem; text-align: center; font-size: 1.1rem; display: flex; flex-direction: column; align-items: center;">
+                <h4 style="color: var(--accent-primary); margin-bottom: 1rem;"><i class="fa-solid fa-brain"></i> Core
+                    Principle</h4>
+                <p>Killpips Deep Chart does not measure price.</p>
+                <p>It measures the <strong>relationship between intention and market response</strong>.</p>
+                <p style="margin-top: 1rem;">When that relationship changes, <strong>the market changes phase</strong>.
+                </p>
+            </div>
+
+            <!-- General Usage Rules -->
+            <div class="card reveal" style="margin-top: 2rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                    <h3 class="card-title">GENERAL USAGE RULES</h3>
+                </div>
+                <div class="card-content">
+                    <ul>
+                        <li>Circles <strong>do not replace context</strong></li>
+                        <li>Avoid chop markets</li>
+                        <li>More circles = more information, not more signals</li>
+                        <li>Always use with:
+                            <ul style="margin-top: 0.25rem;">
+                                <li>structure</li>
+                                <li>levels</li>
+                                <li>bias</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Indicator Philosophy -->
+            <div class="blockquote reveal"
+                style="margin-top: 2rem; text-align: center; font-size: 1.1rem; display: flex; flex-direction: column; align-items: center;">
+                <h4 style="color: var(--accent-primary); margin-bottom: 1rem;"><i class="fa-solid fa-brain"></i>
+                    INDICATOR PHILOSOPHY</h4>
+                <p>The Killpips Deep Chart does not tell you <em>what to do</em>.</p>
+                <p>It shows <strong>what the market is doing</strong>.</p>
+                <p style="margin-top: 1rem;">Those who learn to read it:</p>
+                <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
+                    <li>• stop chasing</li>
+                    <li>• stop anticipating</li>
+                    <li>• start <strong>reacting logically</strong></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: KVO Strategy Pressure -->
+    <section id="strategy-pressure" class="section">
+        <div class="decoration-container" style="opacity: 0.3;">
+            <div class="decoration-element candlestick bull size-md pos-1" style="left: 5%; top: 20%;"></div>
+            <div class="decoration-element decoration-arrow pos-4" style="right: 5%; bottom: 40%;"><i
+                    class="fa-solid fa-chart-line"></i></div>
+        </div>
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-icon"><i class="fa-solid fa-book-open"></i></span>
+                <h2 class="section-title">KVO Strategy <span class="gradient-text">Pressure</span></h2>
+                <p class="section-subtitle">Dynamic market-reading tool for interpreting directional pressure,
+                    operational context, and market phases.</p>
+            </div>
+
+            <!-- Purpose -->
+            <div class="card reveal" style="margin-bottom: 2rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-bullseye"></i></span>
+                    <h3 class="card-title">Purpose of the Tool</h3>
+                </div>
+                <div class="card-content">
+                    <p>KVO Strategy Pressure is a <strong>dynamic market-reading tool</strong>.</p>
+                    <p>It is not designed as a simple signal indicator, but as a <strong>framework for interpreting
+                            directional pressure</strong>, operational context, and market phases.</p>
+                    <p>Its objectives are:</p>
+                    <ul>
+                        <li>Identify <strong>when the market is actually pushing</strong></li>
+                        <li>Separate <strong>continuity phases</strong> from <strong>contrast or transition
+                                phases</strong></li>
+                        <li>Provide a coherent operational framework aligned with session, context, and dominant
+                            direction</li>
+                    </ul>
+                    <p>It should be used as a <strong>decision filter</strong>, not as a mechanical system.</p>
+                </div>
+            </div>
+
+            <!-- Core Components -->
+            <h3 class="gradient-text reveal" style="text-align: center; margin-bottom: 2rem;"><i
+                    class="fa-solid fa-layer-group"></i> CORE COMPONENTS</h3>
+            <div class="grid-2 reveal">
+                <!-- Component 1 -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon"><i class="fa-solid fa-diamond"></i></span>
+                        <h4 class="card-title">1. Directional Structure</h4>
+                    </div>
+                    <div class="card-content">
+                        <p>The directional structure defines:</p>
+                        <ul>
+                            <li>The <strong>dominant market direction</strong></li>
+                            <li>Whether the flow is stable or entering a change phase</li>
+                        </ul>
+                        <div class="blockquote" style="margin-top: 1rem;"><strong>Key function:</strong> Avoid trading
+                            against an active and recognized structure.</div>
+                    </div>
+                </div>
+
+                <!-- Component 2 -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon"><i class="fa-solid fa-diamond"></i></span>
+                        <h4 class="card-title">2. Reaction Fills</h4>
+                    </div>
+                    <div class="card-content">
+                        <p>Reaction fills represent <strong>dynamic price interaction areas</strong>.</p>
+                        <p>Their role is to:</p>
+                        <ul>
+                            <li>Highlight <strong>excess zones</strong></li>
+                            <li>Highlight <strong>reversion toward balance</strong></li>
+                            <li>Distinguish impulsive moves from corrective moves</li>
+                        </ul>
+                        <p style="margin-top: 0.5rem;">A price reaction at a fill <strong>does not automatically
+                                generate a trade</strong>. What matters is <strong>how</strong> price reacts.</p>
+                    </div>
+                </div>
+
+                <!-- Component 3 -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon"><i class="fa-solid fa-diamond"></i></span>
+                        <h4 class="card-title">3. Pressure State</h4>
+                    </div>
+                    <div class="card-content">
+                        <p>The Pressure state identifies <strong>when directional push is active</strong>.</p>
+                        <p>It reflects:</p>
+                        <ul>
+                            <li>Movement intensity</li>
+                            <li>Continuity</li>
+                            <li>Alignment between pressure and direction</li>
+                        </ul>
+                        <p style="margin-top: 0.5rem;">When Pressure is active, the market:</p>
+                        <ul>
+                            <li>Tends to <strong>defend the direction</strong></li>
+                            <li>Accelerates during impulses</li>
+                            <li>Reduces the effectiveness of counter-moves</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Component 4 -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon"><i class="fa-solid fa-diamond"></i></span>
+                        <h4 class="card-title">4. Context Filters</h4>
+                    </div>
+                    <div class="card-content">
+                        <p>KVO Strategy Pressure always operates within a context:</p>
+                        <ul>
+                            <li>Market session</li>
+                            <li>Participation</li>
+                            <li>Prevailing direction</li>
+                        </ul>
+                        <p style="margin-top: 0.5rem;">These filters are used to:</p>
+                        <ul>
+                            <li>Reduce noise</li>
+                            <li>Avoid out-of-phase readings</li>
+                            <li>Improve information quality</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Operational Schemes -->
+            <h3 class="gradient-text reveal" style="text-align: center; margin: 3rem 0 2rem;"><i
+                    class="fa-solid fa-puzzle-piece"></i> OPERATIONAL SCHEMES
+            </h3>
+            <p class="reveal"
+                style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem; margin-inline: auto;">The
+                schemes
+                describe <strong>market states</strong>, not rigid setups.</p>
+
+            <div class="grid-2 reveal">
+                <!-- Scheme 1 -->
+                <div class="scheme-card">
+                    <div class="scheme-header green">
+                        <span class="scheme-icon"><i class="fa-solid fa-circle"></i></span>
+                        <h4 class="scheme-title">SCHEME 1 — CONTINUITY PRESSURE</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <div class="scheme-section">
+                            <h5>Reading</h5>
+                            <ul>
+                                <li>Defined directional structure</li>
+                                <li>Active Pressure in the same direction</li>
+                                <li>Ordered reactions on the fill</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>Market State</h5>
+                            <ul>
+                                <li>Operational trend</li>
+                                <li>Directional control</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>What to Expect</h5>
+                            <ul>
+                                <li>Continuation of the move</li>
+                                <li>Shallow pullbacks</li>
+                                <li>Fast resumptions</li>
+                            </ul>
+                        </div>
+                        <div class="blockquote" style="margin-top: 1rem;">This is the most favorable context for
+                            following the flow.</div>
+                    </div>
+                </div>
+
+                <!-- Scheme 2 -->
+                <div class="scheme-card">
+                    <div class="scheme-header red">
+                        <span class="scheme-icon"><i class="fa-solid fa-circle"></i></span>
+                        <h4 class="scheme-title">SCHEME 2 — REACTIVE REVERSION (MEAN REACTION)</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <div class="scheme-section">
+                            <h5>Reading</h5>
+                            <ul>
+                                <li>Price in excess relative to the structure</li>
+                                <li>Pressure absent or weakening</li>
+                                <li>Reaction on the fill</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>Market State</h5>
+                            <ul>
+                                <li>Reactive movement</li>
+                                <li>Lack of dominant push</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>What to Expect</h5>
+                            <ul>
+                                <li>Reversion toward balance areas</li>
+                                <li>Corrective moves</li>
+                                <li>Reduced speed</li>
+                            </ul>
+                        </div>
+                        <div class="blockquote" style="margin-top: 1rem;">This is not a trend change, but a rebalancing
+                            phase.</div>
+                    </div>
+                </div>
+
+                <!-- Scheme 3 -->
+                <div class="scheme-card">
+                    <div class="scheme-header orange">
+                        <span class="scheme-icon"><i class="fa-solid fa-circle"></i></span>
+                        <h4 class="scheme-title">SCHEME 3 — PRESSURE CONTRAST</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <div class="scheme-section">
+                            <h5>Reading</h5>
+                            <ul>
+                                <li>Signals opposing the dominant structure</li>
+                                <li>Pressure attempting to develop against the flow</li>
+                                <li>Lower efficiency moves</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>Market State</h5>
+                            <ul>
+                                <li>Contrast phase</li>
+                                <li>Potential transition</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>What to Expect</h5>
+                            <ul>
+                                <li>Irregular movements</li>
+                                <li>False impulses</li>
+                                <li>Need for additional confirmation</li>
+                            </ul>
+                        </div>
+                        <div class="blockquote" style="margin-top: 1rem;">The market is testing, not deciding.</div>
+                    </div>
+                </div>
+
+                <!-- Scheme 4 -->
+                <div class="scheme-card">
+                    <div class="scheme-header blue">
+                        <span class="scheme-icon"><i class="fa-solid fa-circle"></i></span>
+                        <h4 class="scheme-title">SCHEME 4 — STRUCTURAL TRANSITION</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <div class="scheme-section">
+                            <h5>Reading</h5>
+                            <ul>
+                                <li>Previous Pressure exhausting</li>
+                                <li>A new direction starting to stabilize</li>
+                                <li>Change in behavior around the fill</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>Market State</h5>
+                            <ul>
+                                <li>Transition</li>
+                                <li>Flow restructuring</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>What to Expect</h5>
+                            <ul>
+                                <li>Initial range phases</li>
+                                <li>Subsequent expansion</li>
+                                <li>New dominant direction</li>
+                            </ul>
+                        </div>
+                        <div class="blockquote" style="margin-top: 1rem;">Transitions require patience and reading, not
+                            anticipation.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Usage Rules -->
+            <div class="card reveal" style="margin-top: 3rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-brain"></i></span>
+                    <h3 class="card-title">USAGE RULES</h3>
+                </div>
+                <div class="card-content">
+                    <ul>
+                        <li>Pressure is <strong>not an isolated signal</strong></li>
+                        <li>It only works when read together with structure</li>
+                        <li>Schemes must be contextualized within the session</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Settings -->
+            <div class="card reveal" style="margin-top: 2rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-gear"></i></span>
+                    <h3 class="card-title">Settings</h3>
+                </div>
+                <div class="card-content">
+                    <ul>
+                        <li>Factor 2</li>
+                        <li>Primary Momentum 1.5</li>
+                        <li>Secondary Momentum 1</li>
+                        <li>Contrarian 2.5</li>
+                    </ul>
+                    <p style="margin-top: 1rem;">Same settings for both 5-minute and 1-minute timeframes.</p>
+                    <p style="margin-top: 0.5rem;"><strong>Supported assets:</strong> NQ, ES, YM, RTY, FDAX, CL, GC, SI,
+                        HG, NG</p>
+                    <div class="note-box warning" style="margin-top: 1rem;">
+                        <span class="note-icon"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                        <span>Do not use signals without context.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Principle -->
+            <div class="blockquote reveal"
+                style="margin-top: 2rem; text-align: center; font-size: 1.1rem; display: flex; flex-direction: column; align-items: center;">
+                <h4 style="color: var(--accent-primary); margin-bottom: 1rem;"><i class="fa-solid fa-compass"></i> CORE
+                    PRINCIPLE</h4>
+                <p>The market does not move because direction changes.</p>
+                <p>It moves because <strong>the pressure supporting that direction changes</strong>.</p>
+                <p style="margin-top: 1rem;">KVO Strategy Pressure is designed to read <strong>when a direction is
+                        supported</strong> — not to predict where price will go.</p>
+            </div>
+
+            <!-- Final Note -->
+            <div class="note-box info reveal" style="margin-top: 2rem;">
+                <span class="note-icon"><i class="fa-solid fa-note-sticky"></i></span>
+                <div>
+                    <strong>FINAL NOTE</strong>
+                    <p style="margin-top: 0.5rem;">Use KVO Strategy Pressure together with:</p>
+                    <ul style="margin-top: 0.5rem;">
+                        <li>Contextual levels</li>
+                        <li>Higher-timeframe structure</li>
+                        <li>Other Momentum-reading tools</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: BC3 Session Range -->
+    <section id="bc3" class="section section-alt">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-icon"><i class="fa-solid fa-book-open"></i></span>
+                <h2 class="section-title">BC3 – Session Range & <span class="gradient-text">Pressure Framework</span>
+                </h2>
+                <p class="section-subtitle">Structural market range mapping tool for identifying areas of balance,
+                    expansion, and reaction.</p>
+            </div>
+
+            <!-- Purpose -->
+            <div class="card reveal" style="margin-bottom: 2rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-bullseye"></i></span>
+                    <h3 class="card-title">Purpose of the Tool</h3>
+                </div>
+                <div class="card-content">
+                    <p>BC3 is a <strong>structural market range mapping tool</strong>, designed to identify
+                        <strong>areas of balance, expansion, and reaction</strong> during key moments of the trading
+                        day.
+                    </p>
+                    <p>It is not a signal indicator.</p>
+                    <p>Its objective is to:</p>
+                    <ul>
+                        <li>Structure the market into <strong>relevant time-based blocks</strong></li>
+                        <li>Highlight <strong>price acceptance zones</strong></li>
+                        <li>Provide stable references for <strong>Momentum and Pressure analysis</strong></li>
+                        <li>Separate intraday behavior from prior-day references</li>
+                    </ul>
+                    <p>BC3 should be used as a <strong>contextual framework</strong>, not as a standalone
+                        decision-making system.</p>
+                </div>
+            </div>
+
+            <!-- Core Components -->
+            <h3 class="gradient-text reveal" style="text-align: center; margin-bottom: 2rem;"><i
+                    class="fa-solid fa-layer-group"></i> CORE COMPONENTS</h3>
+            <div class="grid-2 reveal">
+                <!-- Component 1 -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon"><i class="fa-solid fa-diamond"></i></span>
+                        <h4 class="card-title">1. Structural Time Ranges</h4>
+                    </div>
+                    <div class="card-content">
+                        <p>The core of BC3 is the division of the market into <strong>fixed time windows</strong>,
+                            aligned with the most relevant institutional moments:</p>
+                        <h5 style="color: var(--accent-green); margin-top: 1rem; margin-bottom: 0.5rem;">Current Day
+                        </h5>
+                        <ul>
+                            <li>RTH Open</li>
+                            <li>London Open</li>
+                            <li>US Open</li>
+                            <li>US Close</li>
+                        </ul>
+                        <h5 style="color: var(--accent-cyan); margin-top: 1rem; margin-bottom: 0.5rem;">Previous Day
+                        </h5>
+                        <ul>
+                            <li>RTH</li>
+                            <li>Asia Close</li>
+                            <li>London Open</li>
+                            <li>US Open</li>
+                        </ul>
+                        <p style="margin-top: 1rem;">Each window generates an <strong>acceptance range</strong> based on
+                            actual price behavior during that period.</p>
+                    </div>
+                </div>
+
+                <!-- Component 2 -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon"><i class="fa-solid fa-diamond"></i></span>
+                        <h4 class="card-title">2. Static Price</h4>
+                    </div>
+                    <div class="card-content">
+                        <p>Each range produces a <strong>Static Price</strong>, representing:</p>
+                        <ul>
+                            <li>The equilibrium point of the period</li>
+                            <li>The price level most accepted by the market</li>
+                        </ul>
+                        <p style="margin-top: 1rem;">The Static Price acts as a <strong>rotation axis</strong> around
+                            which the market decides whether to:</p>
+                        <ul>
+                            <li>Accept</li>
+                            <li>Expand</li>
+                            <li>Reject</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Component 3 -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon"><i class="fa-solid fa-diamond"></i></span>
+                        <h4 class="card-title">3. Acceptance Area (Fill)</h4>
+                    </div>
+                    <div class="card-content">
+                        <p>The fill represents the range:</p>
+                        <ul>
+                            <li>Temporary balance zones</li>
+                            <li>Compression or distribution areas</li>
+                            <li>Operational space for Momentum</li>
+                        </ul>
+                        <p style="margin-top: 1rem;">Price remaining inside the fill indicates
+                            <strong>acceptance</strong>.
+                        </p>
+                        <p>Price moving outside the fill signals <strong>potential expansion</strong>.</p>
+                    </div>
+                </div>
+
+                <!-- Component 4 -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon"><i class="fa-solid fa-diamond"></i></span>
+                        <h4 class="card-title">4. Interday Relationship</h4>
+                    </div>
+                    <div class="card-content">
+                        <p>The overlap between:</p>
+                        <ul>
+                            <li>Current-day ranges</li>
+                            <li>Previous-day ranges</li>
+                        </ul>
+                        <p style="margin-top: 0.5rem;">allows the assessment of:</p>
+                        <ul>
+                            <li>Structural continuity</li>
+                            <li>Context breaks</li>
+                            <li>Regime transitions</li>
+                        </ul>
+                        <p style="margin-top: 1rem;">BC3 makes visible <strong>where the market is operating relative to
+                                recent memory</strong>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Operational Schemas -->
+            <h3 class="gradient-text reveal" style="text-align: center; margin: 3rem 0 2rem;"><i
+                    class="fa-solid fa-puzzle-piece"></i> OPERATIONAL SCHEMAS
+            </h3>
+            <p class="reveal"
+                style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem; margin-inline: auto;">The
+                schemas
+                describe <strong>market states</strong>, not automated setups.</p>
+
+            <div class="grid-2 reveal">
+                <!-- Schema 1 -->
+                <div class="scheme-card">
+                    <div class="scheme-header green">
+                        <span class="scheme-icon"><i class="fa-solid fa-circle"></i></span>
+                        <h4 class="scheme-title">SCHEMA 1 — CONTINUITY ACCEPTANCE</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <div class="scheme-section">
+                            <h5>Reading</h5>
+                            <ul>
+                                <li>Price working above/below the Static Price</li>
+                                <li>Sustained presence inside the fill</li>
+                                <li>Momentum aligned with structure</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>Market State</h5>
+                            <ul>
+                                <li>Continuity</li>
+                                <li>Directional control</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>What to Expect</h5>
+                            <ul>
+                                <li>Progressive extensions</li>
+                                <li>Orderly rotations</li>
+                                <li>Defense of equilibrium areas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Schema 2 -->
+                <div class="scheme-card">
+                    <div class="scheme-header red">
+                        <span class="scheme-icon"><i class="fa-solid fa-circle"></i></span>
+                        <h4 class="scheme-title">SCHEMA 2 — BALANCED ROTATION</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <div class="scheme-section">
+                            <h5>Reading</h5>
+                            <ul>
+                                <li>Price returning into the fill</li>
+                                <li>Momentum decreasing</li>
+                                <li>Lack of expansion</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>Market State</h5>
+                            <ul>
+                                <li>Balanced phase</li>
+                                <li>Absence of dominant pressure</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>What to Expect</h5>
+                            <ul>
+                                <li>Sideways movement</li>
+                                <li>False accelerations</li>
+                                <li>Bidirectional activity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Schema 3 -->
+                <div class="scheme-card">
+                    <div class="scheme-header orange">
+                        <span class="scheme-icon"><i class="fa-solid fa-circle"></i></span>
+                        <h4 class="scheme-title">SCHEMA 3 — EXPANSION ATTEMPT</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <div class="scheme-section">
+                            <h5>Reading</h5>
+                            <ul>
+                                <li>Price exiting the fill</li>
+                                <li>Increasing Momentum</li>
+                                <li>Lack of follow-through</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>Market State</h5>
+                            <ul>
+                                <li>Structural test</li>
+                                <li>Expansion not yet confirmed</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>What to Expect</h5>
+                            <ul>
+                                <li>Fast re-entries</li>
+                                <li>Failed breaks</li>
+                                <li>Attacks on opposite boundaries</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Schema 4 -->
+                <div class="scheme-card">
+                    <div class="scheme-header blue">
+                        <span class="scheme-icon"><i class="fa-solid fa-circle"></i></span>
+                        <h4 class="scheme-title">SCHEMA 4 — CONFIRMED EXPANSION</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <div class="scheme-section">
+                            <h5>Reading</h5>
+                            <ul>
+                                <li>Price breaking and holding outside the fill</li>
+                                <li>Stable Momentum</li>
+                                <li>Alignment across multiple ranges</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>Market State</h5>
+                            <ul>
+                                <li>Directional phase</li>
+                                <li>New operational regime</li>
+                            </ul>
+                        </div>
+                        <div class="scheme-section">
+                            <h5>What to Expect</h5>
+                            <ul>
+                                <li>Impulsive movement</li>
+                                <li>Reduced rotations</li>
+                                <li>Continuation priority</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Usage Rules -->
+            <div class="card reveal" style="margin-top: 3rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-brain"></i></span>
+                    <h3 class="card-title">USAGE RULES</h3>
+                </div>
+                <div class="card-content">
+                    <ul>
+                        <li>BC3 is a <strong>visual map</strong></li>
+                        <li>Momentum determines <strong>whether</strong> a range holds or is exceeded</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Key Principle -->
+            <div class="blockquote reveal"
+                style="margin-top: 2rem; text-align: center; font-size: 1.1rem; display: flex; flex-direction: column; align-items: center;">
+                <h4 style="color: var(--accent-primary); margin-bottom: 1rem;"><i class="fa-solid fa-compass"></i> KEY
+                    PRINCIPLE</h4>
+                <p>The market does not react to time.</p>
+                <p>It reacts to <strong>how price is accepted within time</strong>.</p>
+                <p style="margin-top: 1rem;">BC3 is designed to make this relationship visible.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Deep Chart 1 Min -->
+    <section id="deep-1min" class="section">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-icon"><i class="fa-solid fa-book-open"></i></span>
+                <h2 class="section-title">Deep Chart <span class="gradient-text">1 Min</span></h2>
+                <p class="section-subtitle">Operational Scheme (Scalping Integration)</p>
+            </div>
+
+            <!-- Objective -->
+            <div class="card reveal" style="margin-bottom: 2rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-diamond"></i></span>
+                    <h3 class="card-title">Objective</h3>
+                </div>
+                <div class="card-content">
+                    <p>The <strong>Deep Chart 1 Minute</strong> is the micro-structure component of the integrated KVO
+                        model. Its purpose is not to generate signals, but to <strong>refine timing and
+                            execution</strong> once context, bias, and key levels have already been defined through:</p>
+                    <ul>
+                        <li><strong>BC3 (Session structure & time ranges)</strong></li>
+                        <li><strong>KVO Levels (Profile Heatmap core)</strong></li>
+                        <li><strong>Strategy Pressure (Momentum & pressure validation)</strong></li>
+                    </ul>
+                    <p style="margin-top: 1rem;">Deep Chart 1 Min acts as the <strong>final decision filter</strong>,
+                        allowing the trader to read how price behaves <em>inside</em> or <em>around</em> KVO levels.</p>
+                </div>
+            </div>
+
+            <!-- Role Within Integrated Model -->
+            <div class="card reveal" style="margin-bottom: 2rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-layer-group"></i></span>
+                    <h3 class="card-title">Role Within the Integrated Model</h3>
+                </div>
+                <div class="card-content">
+                    <p>Deep Chart 1 Min is always <strong>context-dependent</strong>:</p>
+                    <ul>
+                        <li>It is activated <strong>only near KVO levels</strong></li>
+                        <li>It is interpreted <strong>only after BC3 bias is defined</strong></li>
+                        <li>It is validated <strong>only if Strategy Pressure is coherent</strong></li>
+                    </ul>
+                    <div class="blockquote" style="margin-top: 1rem;">Without higher-timeframe structure, Deep Chart 1
+                        Min has no operational meaning.</div>
+                </div>
+            </div>
+
+            <!-- What Deep Chart 1 Min Observes -->
+            <div class="card reveal" style="margin-bottom: 2rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <h3 class="card-title">What Deep Chart 1 Min Observes</h3>
+                </div>
+                <div class="card-content">
+                    <p>The tool focuses on <strong>micro price behavior</strong>, highlighting:</p>
+                    <ul>
+                        <li>Local volume concentrations</li>
+                        <li>Micro-acceptance and rejection zones</li>
+                        <li>Short-term momentum bursts</li>
+                        <li>Absorption or lack of follow-through</li>
+                    </ul>
+                    <p style="margin-top: 1rem;">This allows the trader to understand <strong>how price is interacting
+                            with the level</strong>, not just that it has reached it.</p>
+                </div>
+            </div>
+
+            <!-- Core Reading Logic -->
+            <h3 class="gradient-text reveal" style="text-align: center; margin: 2rem 0;">🧠 Core Reading Logic</h3>
+            <div class="grid-2 reveal">
+                <!-- Reading 1 -->
+                <div class="card">
+                    <h4 style="color: var(--accent-cyan); margin-bottom: 1rem;"><i class="fa-solid fa-1"></i> Acceptance
+                        at the Level</h4>
+                    <ul>
+                        <li>Price oscillates tightly around the KVO level</li>
+                        <li>Volume builds without directional continuation</li>
+                        <li>Momentum remains neutral or fades</li>
+                    </ul>
+                    <div class="blockquote" style="margin-top: 1rem;"><strong>Interpretation:</strong> Temporary
+                        equilibrium → favor rotation, partial exits, or wait for confirmation.</div>
+                </div>
+
+                <!-- Reading 2 -->
+                <div class="card">
+                    <h4 style="color: var(--accent-red); margin-bottom: 1rem;"><i class="fa-solid fa-2"></i> Rejection
+                        at the Level</h4>
+                    <ul>
+                        <li>Sharp reaction away from the KVO level</li>
+                        <li>Volume spike followed by immediate pullback</li>
+                        <li>Momentum aligns with rejection direction</li>
+                    </ul>
+                    <div class="blockquote" style="margin-top: 1rem;"><strong>Interpretation:</strong> Level defended →
+                        contrarian or continuation away from the level, depending on higher-timeframe bias.</div>
+                </div>
+
+                <!-- Reading 3 -->
+                <div class="card">
+                    <h4 style="color: var(--accent-orange); margin-bottom: 1rem;"><i class="fa-solid fa-3"></i> Break
+                        Without Acceptance</h4>
+                    <ul>
+                        <li>Price briefly pierces the level</li>
+                        <li>Lack of volume follow-through</li>
+                        <li>Immediate re-entry into prior range</li>
+                    </ul>
+                    <div class="blockquote" style="margin-top: 1rem;"><strong>Interpretation:</strong> False break →
+                        trap scenario → expect rotation or move toward opposite KVO reference.</div>
+                </div>
+
+                <!-- Reading 4 -->
+                <div class="card">
+                    <h4 style="color: var(--accent-green); margin-bottom: 1rem;">4️⃣ Break With Acceptance</h4>
+                    <ul>
+                        <li>Price breaks the KVO level</li>
+                        <li>Holds above/below with building volume</li>
+                        <li>Momentum and Strategy Pressure confirm</li>
+                    </ul>
+                    <div class="blockquote" style="margin-top: 1rem;"><strong>Interpretation:</strong> Confirmed
+                        expansion → align with breakout direction, manage risk tightly.</div>
+                </div>
+            </div>
+
+            <!-- Integration With KVO Levels -->
+            <div class="card reveal" style="margin-top: 2rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-link"></i></span>
+                    <h3 class="card-title">Integration With KVO Levels</h3>
+                </div>
+                <div class="card-content">
+                    <p>Deep Chart 1 Min is primarily applied around:</p>
+                    <ul>
+                        <li>RD0 / SD0 (Zero Area tests)</li>
+                        <li>RD1 / SD1 (environment change)</li>
+                        <li>RD2 / SD2 (reverting zones)</li>
+                        <li>VAH / VAL</li>
+                        <li>Range Daily Max / Min</li>
+                        <li>Cluster VIX</li>
+                    </ul>
+                    <p style="margin-top: 1rem;">The goal is to <strong>observe reaction quality</strong>, not predict
+                        direction.</p>
+                </div>
+            </div>
+
+            <!-- Operational Usage Flow -->
+            <div class="card reveal" style="margin-top: 2rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-gear"></i></span>
+                    <h3 class="card-title">Operational Usage Flow</h3>
+                </div>
+                <div class="card-content">
+                    <ol style="list-style: decimal; padding-left: 1.5rem;">
+                        <li>Define session context with <strong>BC3</strong></li>
+                        <li>Identify active <strong>KVO levels</strong> via Profile Heatmap</li>
+                        <li>Validate pressure and momentum with <strong>Strategy Pressure</strong></li>
+                        <li>Activate <strong>Deep Chart 1 Min</strong> only at key interaction points</li>
+                        <li>Execute based on acceptance / rejection / breakout behavior</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Operational Constraints -->
+            <div class="note-box warning reveal" style="margin-top: 2rem;">
+                <span class="note-icon"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                <div>
+                    <strong>Operational Constraints</strong>
+                    <ul style="margin-top: 0.5rem;">
+                        <li>Never use Deep Chart 1 Min in isolation</li>
+                        <li>Avoid interpreting noise away from KVO levels</li>
+                        <li>Execution must always respect higher-timeframe bias</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Summary -->
+            <div class="blockquote reveal"
+                style="margin-top: 2rem; text-align: center; font-size: 1.1rem; display: flex; flex-direction: column; align-items: center;">
+                <h4 style="color: var(--accent-primary); margin-bottom: 1rem;">🧩 Summary</h4>
+                <p>Deep Chart 1 Min is the <strong>execution lens</strong> of the KVO operational model.</p>
+                <p style="margin-top: 1rem;">It does not answer <em>where</em> to trade, but <strong>how price behaves
+                        once it gets there</strong>, completing the decision-making chain:</p>
+                <p style="margin-top: 1rem; font-weight: 600; color: var(--accent-cyan);">Context → Level → Pressure →
+                    Micro-Structure → Execution</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Integrated Operational Model -->
+    <section id="integrated" class="section section-alt">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-icon"><i class="fa-solid fa-book"></i></span>
+                <h2 class="section-title">Integrated <span class="gradient-text">Operational Model</span></h2>
+                <p class="section-subtitle">BC3, Deep Chart, Strategy Pressure and Profile Heatmap (KVO Core)</p>
+            </div>
+            <!-- Background Decoration -->
+            <div class="decoration-container" style="opacity: 0.5;">
+                <div class="decoration-element candlestick bear size-lg pos-2" style="top: 10%; right: 5%;"></div>
+                <div class="decoration-element decoration-arrow pos-5"
+                    style="bottom: 50%; right: 10%; font-size: 6rem;"><i class="fa-solid fa-arrow-trend-down"></i></div>
+            </div>
+
+            <!-- General Objective -->
+            <div class="card reveal" style="margin-bottom: 2rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-diamond"></i></span>
+                    <h3 class="card-title">General Objective</h3>
+                </div>
+                <div class="card-content">
+                    <p>This integrated operational model combines four advanced tools to guide the user in reading the
+                        market in a <strong>conscious, structured, and repeatable way</strong>, with KVO levels acting
+                        as the decision-making core. Each tool contributes to building a complete framework to evaluate:
+                    </p>
+                    <ul>
+                        <li>Intraday context and trend</li>
+                        <li>Pressure and momentum of price movements</li>
+                        <li>Equilibrium zones and potential reversals</li>
+                        <li>Historical memory of key levels</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><strong>Integrated tools:</strong></p>
+                    <ol style="list-style: decimal; padding-left: 1.5rem;">
+                        <li><strong>BC3 – Session Range & Pressure Framework</strong></li>
+                        <li><strong>Deep Chart and 1 Min version – Structural volume analysis</strong></li>
+                        <li><strong>Strategy Pressure – Pressure and momentum measurement</strong></li>
+                        <li><strong>KVO Profile Heatmap – Key levels and historical memory</strong></li>
+                    </ol>
+                    <div class="blockquote" style="margin-top: 1rem;">The objective is not to generate automatic
+                        signals, but to build <strong>a structured operational model</strong>, where each tool confirms
+                        or challenges the market interpretation.</div>
+                </div>
+            </div>
+
+            <!-- Core Components -->
+            <h3 class="gradient-text reveal" style="text-align: center; margin-bottom: 2rem;"><i
+                    class="fa-solid fa-layer-group"></i> Core Components of the
+                Model</h3>
+
+            <!-- Component 1 -->
+            <div class="card reveal" style="margin-bottom: 1.5rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-1"></i></span>
+                    <h3 class="card-title">Time Ranges and Static Price (BC3)</h3>
+                </div>
+                <div class="card-content">
+                    <p>The market is divided into <strong>fixed time windows</strong>:</p>
+                    <div class="grid-2" style="margin-top: 1rem;">
+                        <div>
+                            <h5 style="color: var(--accent-green); margin-bottom: 0.5rem;">Current day:</h5>
+                            <ul>
+                                <li>RTH Open</li>
+                                <li>London Open</li>
+                                <li>US Open</li>
+                                <li>US Close</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">Previous day:</h5>
+                            <ul>
+                                <li>RTH</li>
+                                <li>Asia Close</li>
+                                <li>London Open</li>
+                                <li>US Open</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p style="margin-top: 1rem;">Each window generates a <strong>Static Price</strong> and an
+                        <strong>acceptance fill</strong>, identifying:
+                    </p>
+                    <ul>
+                        <li>Temporary equilibrium zones</li>
+                        <li>Compression or distribution phases</li>
+                        <li>Operational areas for pressure and momentum analysis</li>
+                    </ul>
+                    <h5 style="color: var(--accent-primary); margin-top: 1rem; margin-bottom: 0.5rem;">Integration with
+                        KVO levels:</h5>
+                    <ul>
+                        <li>RD0/SD0 define the initial range (RTH Open)</li>
+                        <li>If RD0/SD0 are not violated, the session is considered <strong>range-bound</strong>,
+                            favoring swing strategies</li>
+                        <li>BC3 visualizes how price reacts to KVO levels within a precise temporal context</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Component 2 - Strategic Levels -->
+            <div class="card reveal" style="margin-bottom: 1.5rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-2"></i></span>
+                    <h3 class="card-title">Strategic Levels and KVO Profile Heatmap</h3>
+                </div>
+                <div class="card-content">
+                    <p>KVO levels represent the <strong>decision-making core</strong>, integrating expected range logic
+                        and market structure.</p>
+
+                    <h5 style="color: var(--accent-orange); margin-top: 1.5rem; margin-bottom: 0.75rem;">Volatility &
+                        Expected Range Levels</h5>
+                    <ul>
+                        <li><strong>VIX R1 / R2 and VIX S1 / S2:</strong> High-probability reversal zones. Together they
+                            form the <em>VIX Cluster</em>, where price often reacts sharply.</li>
+                        <li><strong>1DexpMAX / 1DexpMIN:</strong> One-Day Expected Move Maximum and Minimum. These areas
+                            function as reversal clusters.</li>
+                        <li><strong>VAH / VAL:</strong> Value Area High and Low, calculated differently from classical
+                            Volume Profile. They represent areas where price seeks fair value and often reacts.</li>
+                        <li><strong>Range Daily Max / Range Daily Min:</strong> Extreme daily range boundaries. These
+                            are the ultimate session "walls"; breaking them usually signals strong momentum or trend
+                            extension.</li>
+                    </ul>
+
+                    <h5 style="color: var(--accent-blue); margin-top: 1.5rem; margin-bottom: 0.75rem;">Market Structure
+                        & Pivot Levels</h5>
+                    <ul>
+                        <li><strong>RD0 / SD0 (Zero Area):</strong> Session opening range. This is a range environment
+                            where the strategy favors longs at SD0 and shorts at RD0 as long as price remains inside the
+                            range.</li>
+                        <li><strong>HV (Daily Pivot):</strong> The daily pivot level. Used as an intermediate target or
+                            as a contrarian entry during rotational phases.</li>
+                        <li><strong>RD1 / SD1 (Environment Change):</strong> First directional shift levels. A breakout
+                            above RD1 or below SD1 signals a transition from range to trend conditions.</li>
+                        <li><strong>RD2 / SD2 (Reverting Areas):</strong> Extended zones where price often reacts or
+                            retraces back toward the mean or historical clusters.</li>
+                    </ul>
+
+                    <div class="blockquote" style="margin-top: 1rem;">All levels are visualized through the
+                        <strong>Profile Heatmap</strong>, which combines historical memory, intraday structure, and
+                        volume behavior.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Component 3 -->
+            <div class="card reveal" style="margin-bottom: 1.5rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-3"></i></span>
+                    <h3 class="card-title">Pressure and Momentum (Strategy Pressure)</h3>
+                </div>
+                <div class="card-content">
+                    <p>Measures <strong>movement strength</strong> through volume, speed, and directional pressure.</p>
+                    <h5 style="color: var(--accent-cyan); margin-top: 1rem; margin-bottom: 0.5rem;">Integration with BC3
+                        and KVO:</h5>
+                    <ul>
+                        <li>Confirms the validity of BC3 ranges</li>
+                        <li>Highlights potential breaks of KVO levels</li>
+                        <li>Filters contrarian opportunities based on pressure and momentum</li>
+                    </ul>
+                    <h5 style="color: var(--accent-cyan); margin-top: 1rem; margin-bottom: 0.5rem;">Operational usage:
+                    </h5>
+                    <ul>
+                        <li>Coherent movement inside BC3 fill + pressure confirmation → continuity</li>
+                        <li>External breaks with strong pressure + KVO confirmation → confirmed expansion</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Component 4 -->
+            <div class="card reveal" style="margin-bottom: 1.5rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-4"></i></span>
+                    <h3 class="card-title">Deep Price Analysis (Deep Chart)</h3>
+                </div>
+                <div class="card-content">
+                    <p><strong>Identifies:</strong></p>
+                    <ul>
+                        <li>significant volume concentrations within BC3 ranges</li>
+                        <li>local spikes, accelerations, and flow anomalies</li>
+                        <li>tests, defenses, or rejections at KVO levels</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><strong>Supports validation of:</strong></p>
+                    <ul>
+                        <li>swing operations</li>
+                        <li>contrarian operations</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><strong>Helps distinguish between:</strong></p>
+                    <ul>
+                        <li>level acceptance (building)</li>
+                        <li>level rejection (reaction)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Component 4 bis - Deep Chart 1 Min -->
+            <div class="card reveal" style="margin-bottom: 2rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-4"></i></span>
+                    <h3 class="card-title">bis – Deep Chart 1 Min (Operational Scalping)</h3>
+                </div>
+                <div class="card-content">
+                    <p>The <strong>Deep Chart 1 Min</strong> version is specifically designed for <strong>scalping on
+                            the 1-minute timeframe</strong> and represents the micro-structural level of the operational
+                        model.</p>
+
+                    <h5 style="color: var(--accent-cyan); margin-top: 1rem; margin-bottom: 0.5rem;">Main function:</h5>
+                    <ul>
+                        <li>read <strong>the internal price behavior</strong> around KVO levels</li>
+                        <li>measure <strong>impulses, absorptions, exhaustions, and silent accumulations</strong></li>
+                    </ul>
+
+                    <h5 style="color: var(--accent-cyan); margin-top: 1rem; margin-bottom: 0.5rem;">Role in the model:
+                    </h5>
+                    <ul>
+                        <li>Does NOT generate automatic signals</li>
+                        <li>Does NOT replace KVO levels</li>
+                        <li>serves to <strong>refine operational timing</strong></li>
+                    </ul>
+
+                    <h5 style="color: var(--accent-cyan); margin-top: 1rem; margin-bottom: 0.5rem;">Integration with
+                        KVO:</h5>
+                    <ul>
+                        <li>near RD0 / SD0 → confirms or rejects the range</li>
+                        <li>at RD1 / SD1 → validates environment change</li>
+                        <li>in the RD2 / SD2 area, VIX Cluster or Daily Range → reads exhaustion or defense</li>
+                    </ul>
+
+                    <h5 style="color: var(--accent-cyan); margin-top: 1rem; margin-bottom: 0.5rem;">Operational usage:
+                    </h5>
+                    <ul>
+                        <li>presence of continuity → favors continuation</li>
+                        <li>absorption → defense of the level</li>
+                        <li>exhaustion → possible reaction or pause</li>
+                        <li>silent accumulation → building before movement</li>
+                    </ul>
+
+                    <div class="blockquote" style="margin-top: 1rem;">Deep Chart 1 Min represents the <strong>precision
+                            interface</strong> of the model: it allows operating with awareness at key levels, without
+                        anticipating the market but reading what is actually happening.</div>
+                </div>
+            </div>
+
+            <!-- Integrated Operational Schemes -->
+            <h3 class="gradient-text reveal" style="text-align: center; margin: 2rem 0;"><i
+                    class="fa-solid fa-puzzle-piece"></i> Integrated Operational
+                Schemes</h3>
+            <div class="grid-2 reveal">
+                <!-- Scheme 1 -->
+                <div class="scheme-card">
+                    <div class="scheme-header green">
+                        <span class="scheme-icon"><i class="fa-solid fa-circle"></i></span>
+                        <h4 class="scheme-title">Scheme 1 – Continuity Acceptance</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <ul>
+                            <li>Price inside the BC3 fill</li>
+                            <li>Coherent momentum</li>
+                            <li>Moderate pressure (Strategy Pressure)</li>
+                            <li>Respect of KVO levels</li>
+                        </ul>
+                        <div class="blockquote" style="margin-top: 1rem;"><strong>What to expect:</strong> orderly
+                            extensions, range defense, controlled continuation</div>
+                    </div>
+                </div>
+
+                <!-- Scheme 2 -->
+                <div class="scheme-card">
+                    <div class="scheme-header yellow">
+                        <span class="scheme-icon"><i class="fa-solid fa-circle"></i></span>
+                        <h4 class="scheme-title">Scheme 2 – Rotational Equilibrium</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <ul>
+                            <li>Price re-enters the BC3 fill</li>
+                            <li>Momentum decreasing</li>
+                            <li>Pressure not dominant</li>
+                            <li>Deep Chart shows internal oscillations without breakout</li>
+                        </ul>
+                        <div class="blockquote" style="margin-top: 1rem;"><strong>What to expect:</strong> sideways
+                            movement, false accelerations, bidirectional activity</div>
+                    </div>
+                </div>
+
+                <!-- Scheme 3 -->
+                <div class="scheme-card">
+                    <div class="scheme-header orange">
+                        <span class="scheme-icon"><i class="fa-solid fa-circle"></i></span>
+                        <h4 class="scheme-title">Scheme 3 – Expansion Attempt</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <ul>
+                            <li>Price temporarily breaks the BC3 fill</li>
+                            <li>Increasing pressure</li>
+                            <li>KVO levels suggest potential breakout</li>
+                            <li>Deep Chart confirms local spikes</li>
+                        </ul>
+                        <div class="blockquote" style="margin-top: 1rem;"><strong>What to expect:</strong> fast
+                            re-entries, failed breaks, attacks on opposite boundaries</div>
+                    </div>
+                </div>
+
+                <!-- Scheme 4 -->
+                <div class="scheme-card">
+                    <div class="scheme-header blue">
+                        <span class="scheme-icon"><i class="fa-solid fa-circle"></i></span>
+                        <h4 class="scheme-title">Scheme 4 – Confirmed Expansion</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <ul>
+                            <li>Price holds outside the BC3 fill</li>
+                            <li>Stable momentum and high pressure</li>
+                            <li>Profile Heatmap confirms historically significant breakout area</li>
+                        </ul>
+                        <div class="blockquote" style="margin-top: 1rem;"><strong>What to expect:</strong> impulsive
+                            movement, continuation priority, reduced rotations</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Operational Requirements -->
+            <div class="card reveal" style="margin-top: 2rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-brain"></i></span>
+                    <h3 class="card-title">Operational Requirements</h3>
+                </div>
+                <div class="card-content">
+                    <ul>
+                        <li>Cross-confirmation among all tools</li>
+                        <li>Validation of KVO levels</li>
+                        <li>Observation of BC3 fills and Strategy Pressure</li>
+                        <li>Deep Chart analysis of internal range structure</li>
+                        <li>Decisions based on <strong>convergence of levels, pressure, momentum, and historical
+                                memory</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Usage Guidelines -->
+            <div class="card reveal" style="margin-top: 2rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-wrench"></i></span>
+                    <h3 class="card-title">Usage Guidelines</h3>
+                </div>
+                <div class="card-content">
+                    <ul>
+                        <li>Always integrate <strong>BC3 + Deep Chart + Strategy Pressure + Profile Heatmap</strong>
+                        </li>
+                        <li>Monitor KVO levels as the decision-making core</li>
+                        <li>Use BC3 fills as guides for equilibrium and reactions</li>
+                        <li>Confirm direction or reversals through pressure and momentum</li>
+                        <li>Avoid isolated signals; focus on <strong>multiple confirmations</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Final Statement -->
+            <div class="blockquote reveal"
+                style="margin-top: 2rem; text-align: center; font-size: 1.1rem; display: flex; flex-direction: column; align-items: center;">
+                <p>This integrated operational model combines <strong>BC3, Deep Chart, Strategy Pressure, and Profile
+                        Heatmap</strong> in a synergistic way, with <strong>KVO levels as the core</strong>, providing a
+                    structured and professional guide for conscious trading decisions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <span class="logo-icon"><i class="fa-solid fa-chart-column"></i></span>
+                <span class="logo-text">Killpips Mind & Markets</span>
+            </div>
+            <p class="footer-text">Advanced Trading Tools for Professional Market Analysis</p>
+            <div class="footer-divider"></div>
+            <p class="footer-copyright">© 2025 Killpips. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
