@@ -1163,54 +1163,272 @@
                 </div>
             </div>
 
-            <!-- Settings -->
-            <div class="card reveal" style="margin-top: 2rem;">
-                <div class="card-header">
-                    <span class="card-icon"><i class="fa-solid fa-gear"></i></span>
-                    <h3 class="card-title">Settings</h3>
+            <!-- KVO Strategy Pressure – Operativity -->
+            <h3 class="gradient-text reveal" style="text-align: center; margin: 4rem 0 2rem;">
+                <i class="fa-solid fa-hand-holding-dollar"></i> OPERATIVITY
+            </h3>
+
+            <!-- Objective & Role -->
+            <div class="grid-2 reveal">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon"><i class="fa-solid fa-crosshairs"></i></span>
+                        <h4 class="card-title">Objective</h4>
+                    </div>
+                    <div class="card-content">
+                        <p>The <strong>operational arm</strong> of the KVO Model.</p>
+                        <p>Guides the trader in <strong>reading market action</strong>, transforming:</p>
+                        <ul>
+                            <li>Context (BC3)</li>
+                            <li>Levels (KVO Profile Heatmap)</li>
+                            <li>Pressure (Strategy Pressure)</li>
+                        </ul>
+                        <p style="margin-top: 0.5rem;">into a <strong>coherent operational structure</strong>.</p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <ul>
-                        <li>Factor 2</li>
-                        <li>Primary Momentum 1.5</li>
-                        <li>Secondary Momentum 1</li>
-                        <li>Contrarian 2.5</li>
-                    </ul>
-                    <p style="margin-top: 1rem;">Same settings for both 5-minute and 1-minute timeframes.</p>
-                    <p style="margin-top: 0.5rem;"><strong>Supported assets:</strong> NQ, ES, YM, RTY, FDAX, CL, GC, SI,
-                        HG, NG</p>
-                    <div class="note-box warning" style="margin-top: 1rem;">
-                        <span class="note-icon"><i class="fa-solid fa-triangle-exclamation"></i></span>
-                        <span>Do not use signals without context.</span>
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon"><i class="fa-solid fa-link"></i></span>
+                        <h4 class="card-title">Role in Model</h4>
+                    </div>
+                    <div class="card-content">
+                        <p><strong>Decision Chain:</strong></p>
+                        <p
+                            style="font-family: 'JetBrains Mono', monospace; font-size: 0.85em; margin-bottom: 1rem; color: var(--accent-cyan);">
+                            Levels → BC3 → Pressure → Deep Chart → Operativity</p>
+                        <p>Strategy Pressure qualifies the action, showing <strong>what type of operation</strong> is
+                            allowed.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Core Principle -->
-            <div class="blockquote reveal"
-                style="margin-top: 2rem; text-align: center; font-size: 1.1rem; display: flex; flex-direction: column; align-items: center;">
-                <h4 style="color: var(--accent-primary); margin-bottom: 1rem;"><i class="fa-solid fa-compass"></i> CORE
-                    PRINCIPLE</h4>
-                <p>The market does not move because direction changes.</p>
-                <p>It moves because <strong>the pressure supporting that direction changes</strong>.</p>
-                <p style="margin-top: 1rem;">KVO Strategy Pressure is designed to read <strong>when a direction is
-                        supported</strong> — not to predict where price will go.</p>
-            </div>
-
-            <!-- Final Note -->
-            <div class="note-box info reveal" style="margin-top: 2rem;">
-                <span class="note-icon"><i class="fa-solid fa-note-sticky"></i></span>
-                <div>
-                    <strong>FINAL NOTE</strong>
-                    <p style="margin-top: 0.5rem;">Use KVO Strategy Pressure together with:</p>
-                    <ul style="margin-top: 0.5rem;">
-                        <li>Contextual levels</li>
-                        <li>Higher-timeframe structure</li>
-                        <li>Other Momentum-reading tools</li>
+            <!-- Pressure States -->
+            <div class="card reveal" style="margin-top: 2rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-gauge-high"></i></span>
+                    <h3 class="card-title">Pressure States</h3>
+                </div>
+                <div class="card-content">
+                    <div class="grid-3">
+                        <div style="text-align: center;">
+                            <h5 style="color: var(--accent-green); margin-bottom: 0.5rem;"><i
+                                    class="fa-solid fa-arrow-up"></i> Bullish</h5>
+                            <p>Dominant positive pressure</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <h5 style="color: var(--accent-red); margin-bottom: 0.5rem;"><i
+                                    class="fa-solid fa-arrow-down"></i> Bearish</h5>
+                            <p>Dominant negative pressure</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <h5 style="color: var(--accent-orange); margin-bottom: 0.5rem;"><i
+                                    class="fa-solid fa-arrows-left-right"></i> Range</h5>
+                            <p>Neutral / rotational pressure</p>
+                        </div>
+                    </div>
+                    <p style="margin-top: 1.5rem; text-align: center;"><strong>Enables specific families:</strong></p>
+                    <ul style="max-width: 400px; margin: 0 auto;">
+                        <li><strong>Trend:</strong> Breakout, continuation, pullback</li>
+                        <li><strong>Range:</strong> Rotations and swings</li>
                     </ul>
                 </div>
             </div>
-        </div>
+
+            <!-- Integration with KVO Levels -->
+            <div class="card reveal" style="margin-top: 2rem;">
+                <div class="card-header">
+                    <span class="card-icon"><i class="fa-solid fa-layer-group"></i></span>
+                    <h3 class="card-title">Integration with KVO Levels</h3>
+                </div>
+                <div class="card-content">
+                    <p>All operativity revolves around <strong>KVO levels</strong>:</p>
+                    <div class="grid-2" style="margin-top: 1rem;">
+                        <ul>
+                            <li><strong>RD0 / SD0:</strong> Zero Area</li>
+                            <li><strong>RD1 / SD1:</strong> Environment Change</li>
+                            <li><strong>RD2 / SD2:</strong> Extensions</li>
+                        </ul>
+                        <ul>
+                            <li><strong>VAH / VAL:</strong> Value Zones</li>
+                            <li><strong>VIX / EXP Cluster:</strong> Reversal Zone</li>
+                            <li><strong>Daily Range:</strong> Session Extremes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Qualified Operational Types -->
+            <h4 class="reveal" style="text-align: center; margin: 3rem 0 2rem; color: var(--text-primary);"><i
+                    class="fa-solid fa-filter"></i> Qualified Operational Types</h4>
+            <div class="grid-2 reveal">
+                <div class="scheme-card">
+                    <div class="scheme-header green">
+                        <span class="scheme-icon"><i class="fa-solid fa-forward"></i></span>
+                        <h4 class="scheme-title">Structural Breakouts</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <ul>
+                            <li>Break of a relevant KVO level</li>
+                            <li>Pressure aligned with context</li>
+                            <li>Momentum confirmation</li>
+                        </ul>
+                        <div class="blockquote" style="margin-top: 1rem;">Indicates <strong>structural
+                                continuation</strong>.</div>
+                    </div>
+                </div>
+                <div class="scheme-card">
+                    <div class="scheme-header yellow">
+                        <span class="scheme-icon"><i class="fa-solid fa-rotate-left"></i></span>
+                        <h4 class="scheme-title">Continuation Pullbacks</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <ul>
+                            <li>Trend already active</li>
+                            <li>Controlled retracement into KVO level</li>
+                            <li>Pressure remains coherent</li>
+                        </ul>
+                        <div class="blockquote" style="margin-top: 1rem;">Favor entries in <strong>context
+                                direction</strong>.</div>
+                    </div>
+                </div>
+                <div class="scheme-card">
+                    <div class="scheme-header orange">
+                        <span class="scheme-icon"><i class="fa-solid fa-arrows-spin"></i></span>
+                        <h4 class="scheme-title">Range Operativity</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <ul>
+                            <li>Range scenario identified</li>
+                            <li>Absence of dominant pressure</li>
+                            <li>Price rotates between levels</li>
+                        </ul>
+                        <div class="blockquote" style="margin-top: 1rem;">Rotational logic, <strong>defensive
+                                approach</strong>.</div>
+                    </div>
+                </div>
+                <div class="scheme-card">
+                    <div class="scheme-header blue">
+                        <span class="scheme-icon"><i class="fa-solid fa-hand"></i></span>
+                        <h4 class="scheme-title">Contextual Contrarian</h4>
+                    </div>
+                    <div class="scheme-body">
+                        <ul>
+                            <li>Activated <strong>only on relevant levels</strong></li>
+                            <li>Requires extremes</li>
+                            <li>Subordinated to broader scenario</li>
+                        </ul>
+                        <div class="blockquote" style="margin-top: 1rem;">Reading tool, <strong>not aggressive
+                                anticipation</strong>.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deep Chart Relationship & Trade Management -->
+            <div class="grid-2 reveal" style="margin-top: 2rem;">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon"><i class="fa-solid fa-network-wired"></i></span>
+                        <h4 class="card-title">Relation with Deep Chart</h4>
+                    </div>
+                    <div class="card-content">
+                        <p><strong>Strategy Pressure asks:</strong></p>
+                        <div class="blockquote" style="margin: 0.5rem 0;"><em>“What type of trade is legitimate
+                                here?”</em></div>
+                        <p><strong>Deep Chart 1 Min answers:</strong></p>
+                        <div class="blockquote" style="margin: 0.5rem 0;"><em>“How is price accepting or rejecting the
+                                level?”</em></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon"><i class="fa-solid fa-shield-halved"></i></span>
+                        <h4 class="card-title">Trade Management</h4>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>SL & Targets in <strong>fixed points</strong></li>
+                            <li>Calculated on <strong>bar following activation</strong></li>
+                            <li>Anchored to reference KVO level</li>
+                        </ul>
+                        <p style="margin-top: 0.5rem; font-size: 0.9em;">Ensures coherence, risk control, and
+                            statistical repeatability.</p>
+                    </div>
+                </div>
+
+                <!-- Final Operativity Summary -->
+                <div class="blockquote reveal" style="margin-top: 2rem; text-align: center;">
+                    <h4 style="color: var(--accent-primary); margin-bottom: 1rem;"><i class="fa-solid fa-bridge"></i>
+                        BRIDGE TO ACTION</h4>
+                    <p>The <strong>KVO Strategy Pressure – Operativity</strong> module acts as the bridge between
+                        <strong>analysis</strong> and <strong>action</strong>.</p>
+                    <p style="margin-top: 1rem;">It enables structured and conscious execution:</p>
+                    <p style="margin-top: 0.5rem; font-weight: 600; color: var(--accent-cyan);">Levels → Context →
+                        Pressure → Micro-structure → Trade</p>
+                </div>
+
+                <!-- Settings -->
+                <div class="card reveal" style="margin-top: 2rem;">
+                    <div class="card-header">
+                        <span class="card-icon"><i class="fa-solid fa-gear"></i></span>
+                        <h3 class="card-title">Settings</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="grid-2">
+                            <div>
+                                <h5 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">1 Min Chart</h5>
+                                <ul>
+                                    <li>Factor: 2</li>
+                                    <li>Primary Momentum: 1</li>
+                                    <li>Secondary Momentum: 1</li>
+                                    <li>Contrarian: 2.5</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">5 Min Chart</h5>
+                                <ul>
+                                    <li>Factor: 2</li>
+                                    <li>Primary Momentum: 1.5</li>
+                                    <li>Secondary Momentum: 1</li>
+                                    <li>Contrarian: 2.5</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p style="margin-top: 0.5rem;"><strong>Supported assets:</strong> NQ, ES, YM, RTY, FDAX, CL, GC,
+                            SI,
+                            HG, NG</p>
+                        <div class="note-box warning" style="margin-top: 1rem;">
+                            <span class="note-icon"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                            <span>Do not use signals without context.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Principle -->
+                <div class="blockquote reveal"
+                    style="margin-top: 2rem; text-align: center; font-size: 1.1rem; display: flex; flex-direction: column; align-items: center;">
+                    <h4 style="color: var(--accent-primary); margin-bottom: 1rem;"><i class="fa-solid fa-compass"></i>
+                        CORE
+                        PRINCIPLE</h4>
+                    <p>The market does not move because direction changes.</p>
+                    <p>It moves because <strong>the pressure supporting that direction changes</strong>.</p>
+                    <p style="margin-top: 1rem;">KVO Strategy Pressure is designed to read <strong>when a direction is
+                            supported</strong> — not to predict where price will go.</p>
+                </div>
+
+                <!-- Final Note -->
+                <div class="note-box info reveal" style="margin-top: 2rem;">
+                    <span class="note-icon"><i class="fa-solid fa-note-sticky"></i></span>
+                    <div>
+                        <strong>FINAL NOTE</strong>
+                        <p style="margin-top: 0.5rem;">Use KVO Strategy Pressure together with:</p>
+                        <ul style="margin-top: 0.5rem;">
+                            <li>Contextual levels</li>
+                            <li>Higher-timeframe structure</li>
+                            <li>Other Momentum-reading tools</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <!-- Section 4: BC3 Session Range -->
