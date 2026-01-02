@@ -36,6 +36,15 @@ This project is a high-performance, aesthetically premium static website that se
 *   **FontAwesome**: Professional 3D-styled icons for visual hierarchy.
 *   **Google Fonts**: Inter & JetBrains Mono for clean, readable typography.
 
+## 📦 Setup & Usage
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/killpips-mind-markets.git
+    ```
+2.  Open the project folder.
+3.  Double-click `index.html` to launch the site in your browser.
+
 ## 🎨 Design Philosophy
 
 *   **Premium Aesthetics**: Dark mode with "hacker/trader" vibes, using neon accents (Green, Red, Cyan, Orange).
@@ -44,4 +53,3 @@ This project is a high-performance, aesthetically premium static website that se
 
 ---
 © 2025 Killpips. All rights reserved.
-

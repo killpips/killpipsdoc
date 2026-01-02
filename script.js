@@ -163,5 +163,43 @@ $(document).ready(function () {
         $(this).css('--mouse-y', `${y}px`);
     });
 
+    // ================================
+    // LIGHTBOX FUNCTIONALITY
+    // ================================
+    // Open Lightbox
+    $(document).on('click', '.lightbox-trigger', function () {
+        const imgSrc = $(this).attr('src');
+        const imgAlt = $(this).attr('alt');
+
+        $('#lightbox-img').attr('src', imgSrc);
+        $('#lightbox-caption').text(imgAlt);
+        $('#lightbox-modal').addClass('show').css('display', 'block');
+        $('body').css('overflow', 'hidden'); // Prevent background scrolling
+    });
+
+    // Close Lightbox (Click X or Outside)
+    function closeLightbox() {
+        $('#lightbox-modal').removeClass('show');
+        setTimeout(() => {
+            $('#lightbox-modal').css('display', 'none');
+            $('body').css('overflow', 'auto');
+        }, 300);
+    }
+
+    $(document).on('click', '.lightbox-close', closeLightbox);
+
+    $(document).on('click', '#lightbox-modal', function (e) {
+        if ($(e.target).is('#lightbox-modal')) {
+            closeLightbox();
+        }
+    });
+
+    // Close on Escape Key
+    $(document).keydown(function (e) {
+        if (e.key === "Escape") {
+            closeLightbox();
+        }
+    });
+
     console.log('✨ Killpips Mind & Markets loaded successfully!');
 });
